@@ -1,2 +1,1 @@
-"# belajar-jwt-auth-node-js" 
-"# magang-webdev-idch" 
+"# magang-webdev-idch"
