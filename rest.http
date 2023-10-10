@@ -1,0 +1,77 @@
+GET http://localhost:3000
+
+### Register Route
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "username": "mantap2",
+    "email": "mantap2@gmail.com",
+    "password": "mantap2euy"
+}
+
+### Login Route
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "mantap2@gmail.com",
+    "password": "mantap2euy"
+}
+
+### Refresh-token Route
+POST http://localhost:3000/auth/refresh-token
+Content-Type: application/json
+
+### Logout Route
+POST http://localhost:3000/auth/logout
+Content-Type: application/json
+
+### TEST WHMCS
+GET http://localhost:3000/whmcs
+Content-Type: application/json
+
+{
+    "username": "salman",
+    "password": "salman123"
+}
+
+### GET ALL USER
+GET http://localhost:3000/admin/get-all-users
+Content-Type: application/json
+
+### GET User by Email
+POST http://localhost:3000/admin/get-user
+Content-Type: application/json
+
+{
+    "email": "mantap@gmail.com"
+}
+
+### Create User
+POST http://localhost:3000/admin/create-user
+Content-Type: application/json
+
+{
+    "username": "mantap3",
+    "email": "mantap3@gmail.com",
+    "password": "mantap3"
+}
+
+### Update Username
+PUT http://localhost:3000/admin/update-profile
+Content-Type: application/json
+
+{
+    "email": "mantap@gmail.com",
+    "newEmail": "mantap99@gmail.com",
+    "newUsername": "mantap99"
+}
+
+### Update Username
+DELETE http://localhost:3000/admin/delete-user
+Content-Type: application/json
+
+{
+    "email": "mantap1@gmail.com"
+}
