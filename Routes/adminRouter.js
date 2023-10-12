@@ -1,8 +1,8 @@
 const router = require('express').Router()
 const createError = require('http-errors')
 require('dotenv').config()
-const bcrypt = require('../helpers/bcrypt_helper')
-const db = require('../helpers/firebase_config')
+const bcrypt = require('../helpers/bcryptHelper')
+const db = require('../helpers/firebaseConfig')
 const User = require('../models/userModel')
 
 // Utility function for validation

@@ -5,10 +5,10 @@ const {
   signAccessToken,
   signRefreshToken,
   verifyRefreshToken
-} = require('../helpers/jwt_helper')
+} = require('../helpers/jwtHelper')
 const User = require('../models/userModel')
-const db = require('../helpers/firebase_config')
-const bcrypt = require('../helpers/bcrypt_helper')
+const db = require('../helpers/firebaseConfig')
+const bcrypt = require('../helpers/bcryptHelper')
 
 const validateRequest = (data, fields) => {
   for (const field of fields) {

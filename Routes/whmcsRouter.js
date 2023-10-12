@@ -4,9 +4,9 @@ const createError = require('http-errors')
 
 const {
   verifyAccessToken
-} = require('../helpers/jwt_helper')
+} = require('../helpers/jwtHelper')
 
-const db = require('../helpers/firebase_config')
+const db = require('../helpers/firebaseConfig')
 
 router.get('/', verifyAccessToken, async (req, res, next) => {
   try {

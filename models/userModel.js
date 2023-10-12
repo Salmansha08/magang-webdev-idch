@@ -1,7 +1,7 @@
 const admin = require('firebase-admin')
 const firestore = admin.firestore()
 
-const bcryptHelper = require('../helpers/bcrypt_helper')
+const bcryptHelper = require('../helpers/bcryptHelper')
 
 const UserCollection = firestore.collection('users')
 
